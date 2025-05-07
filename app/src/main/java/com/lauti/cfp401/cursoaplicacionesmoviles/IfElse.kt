@@ -13,13 +13,14 @@ fun condicioinalConReturn(edad:Int, permiso : Boolean): String{
     return if ("pepe" == "pepe") "Son 2 pepes"
     else "no son los dos pepes"
 }
-fun sacarRegistro(edad: Int, permiso: Boolean): String{
+fun sacarRegistro(edad: Int, permiso: Boolean): String {
     var mensaje: String
-    if(edad >= 18){
+    if (edad >= 18) {
         mensaje = "Pode sacar el registro compa"
-} else{
-    if (permiso) mensaje = "Pode sacar el registro compa"
-        else "volve cuando pueda gato"
-
+    } else {
+        if (permiso) mensaje = "Pode sacar el registro compa"
+        else mensaje = "volve cuando pueda gato"
     }
+    return mensaje
+}
 
